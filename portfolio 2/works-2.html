@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hashimoto Nao Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="橋本直のポートフォリオです">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- ↓Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- ↓Abobe font -->
+    <link rel="stylesheet" href="https://use.typekit.net/kvb4lrd.css">
+  </head>
+
+  <body id="socialtech-top">
+    
+    <!-- ヘッダー -->
+    <header id="header-h1">
+      <h1><a href="index.html#top">HASHIMOTO NAO</a></h1>
+      <!-- PC用メニュー -->
+      <nav id="header-nav">
+        <ul id="nav-list">
+          <li class="nav-item"><a href="index.html#WORKS">WORKS</a></li>
+          <li class="nav-item"><a href="index.html#SKILL">SKILL</a></li>
+          <li class="nav-item"><a href="index.html#ABOUT">ABOUT</a></li>
+        </ul>
+      </nav>
+      <!-- /PC用メニュー -->
+      <!-- スマホ用メニュー -->
+      <img id="sp-menu" src="img/menu.svg" alt="スマホ用メニューボタン" onclick="document.getElementById('sp-nav').style.display = 'block';">
+      <nav id="sp-nav">
+        <a id="hasimotologo" href="#top">HASHIMOTO<br>NAO</a>
+        <ul id="sp-nav-list">
+          <li class="sp-nav-item"><a href="#WORKS" onclick="document.getElementById('sp-nav').style.display = 'none'">WORKS</a></li>
+          <li class="sp-nav-item"><a href="#SKILL" onclick="document.getElementById('sp-nav').style.display = 'none'">SKILL</a></li>
+          <li class="sp-nav-item"><a href="#ABOUT" onclick="document.getElementById('sp-nav').style.display = 'none'">ABOUT</a></li>
+        </ul>
+        <img id="sp-nav-close" src="img/close.svg" alt="メニューを閉じる" onclick="document.getElementById('sp-nav').style.display = 'none'">
+        <figure id="nav-figure">
+          <img id="nav-img" src="img/main2.jpg" alt="大きな木と自分の写真2">
+        </figure>
+      </nav>
+    </header>
+    <!-- /ヘッダー -->
+
+    <main>
+      <article class="works-page">
+        <div class="works-container">
+          <div class="works-about">
+            <h2 class="works-title">美容室のHP（架空） </h2>
+            <p class="works-overview">ヘアーサロンのHP &ensp;</p>
+          </div>
+          <figure class="workspage-figure">
+            <img src="works img/hairtech.gif" alt="美容室のHP画像" width="1600" height="1000">
+          </figure>
+          <div class="works-detail">
+            <h3>担当</h3>
+            <p>WordPress構築</p>
+            <h3>使用技術</h3>
+            <p>WordPress</p>
+            <h3>デザインについて</h3>
+            <p>
+            20~30代の女性のお客様をメインターゲットしたシンプルなデザイン。
+            <br>
+            トップ画面での画像スライド、口コミ情報の表示、GoogleMapでの店舗所在地の表示、お問い合わせフォームなどを実装。
+            </p>
+          </div>
+          <a href="index.html#WORKS" class="home-link">WORKS一覧へ</a>
+        </div>
+        <a href="#socialtech-top"><img src="img/arrow.svg" alt="ページ上部へ戻る" class="gotoworkstop"></a>
+      </article>
+    </main>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hashimoto Nao Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="橋本直のポートフォリオです">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- ↓Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- ↓Abobe font -->
+    <link rel="stylesheet" href="https://use.typekit.net/kvb4lrd.css">
+  </head>
+
+  <body id="top">
+    
+    <!-- ヘッダー -->
+    <header>
+      <a href="#top" id="HNlogo"><img src="img/HNアイコン２.png" alt="HNロゴ" width="400" height="300"></a>
+      <!-- PC用メニュー -->
+      <nav id="header-nav">
+        <ul id="nav-list">
+          <li class="nav-item"><a href="#WORKS">WORKS</a></li>
+          <li class="nav-item"><a href="#SKILL">SKILL</a></li>
+          <li class="nav-item"><a href="#ABOUT">ABOUT</a></li>
+        </ul>
+      </nav>
+      <!-- /PC用メニュー -->
+      <!-- スマホ用メニュー -->
+      <img id="sp-menu" src="img/menu.svg" alt="スマホ用メニューボタン" onclick="document.getElementById('sp-nav').style.display = 'block';">
+      <nav id="sp-nav">
+        <a id="hasimotologo" href="#top">HASHIMOTO<br>NAO</a>
+        <ul id="sp-nav-list">
+          <li class="sp-nav-item"><a href="#WORKS" onclick="document.getElementById('sp-nav').style.display = 'none'">WORKS</a></li>
+          <li class="sp-nav-item"><a href="#SKILL" onclick="document.getElementById('sp-nav').style.display = 'none'">SKILL</a></li>
+          <li class="sp-nav-item"><a href="#ABOUT" onclick="document.getElementById('sp-nav').style.display = 'none'">ABOUT</a></li>
+        </ul>
+        <img id="sp-nav-close" src="img/close.svg" alt="メニューを閉じる" onclick="document.getElementById('sp-nav').style.display = 'none'">
+        <figure id="nav-figure">
+          <img id="nav-img" src="img/main2.jpg" alt="大きな木と自分の写真2">
+        </figure>
+      </nav>
+    </header>
+    <!-- /ヘッダー -->
+
+    <main id="main">
+
+    <!-- メインビジュアル -->
+    <section id="main-visual">
+      <div id="mv-container">
+        <p>心に届くデザインを<br>作っていきたいです。</p>
+        <figure id="mv-img">
+        <img src="img/main.jpg" alt="大きな木と自分の写真" width="900" height="600">
+        </figure>
+      </div>
+      <div id="mv-name">
+        <p>H<span class="pink">A</span>SHIMOTO N<span class="pink">A</span>O</p>
+      </div>
+    </section>
+    <!-- /メインビジュアル -->
+
+    <!-- WORKSセクション -->
+    <section id="WORKS">
+      <h2 class="section-title">WORKS</h2>
+      <div id="works-list">
+        <div class="works-item">
+          <a class="works-link" href="works-1.html">
+          <figure class="works-figure">
+            <img src="img/works/socialtech.png" alt="SocialTechサイト画像" width="800" height="571">
+          </figure>
+          <div class="works-info">
+            <p class="works-name">コーポレートサイト</p>
+            <p class="works-skill">HTML/CSS</p>
+          </div>
+          </a>
+        </div>
+        <div class="works-item">
+          <a class="works-link" href="works-2.html">
+          <figure class="works-figure">
+            <img src="img/works/samuraibiyousitu.png" alt="HairTechサイト画像" width="800" height="496">
+          </figure>
+          <div class="works-info">
+            <p class="works-name">美容室サイト</p>
+            <p class="works-skill">wordpress</p>
+          </div>
+          </a>
+        </div>
+        <div class="works-item">
+          <a class="works-link" href="works-3.html">
+          <figure class="works-figure">
+            <img src="img/works/web-banner.jpg" alt="ITスクールのバナー画像" width="800" height="667">
+          </figure>
+          <div class="works-info">
+            <p class="works-name">ITスクールのバナー</p>
+            <p class="works-skill">photoshop</p>
+          </div>
+        </a>
+        </div>
+        <div class="works-item">
+          <a class="works-link" href="works-4.html">
+          <figure class="works-figure">
+            <img src="img/works/kyoto-banner.jpg" alt="京都ツアーバナー画像" width="800" height="533">
+          </figure>
+          <div class="works-info">
+            <p class="works-name">ツアーバナー画像</p>
+            <p class="works-skill">photoshop</p>
+          </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /WORKSセクション -->
+
+    <!-- SKILLセクション -->
+    <section id="SKILL">
+      <h2 class="section-title">SKILL</h2>
+      <table id="skill-table">
+        <tr>
+          <td class="skill-name">HTML/CSS</td>
+          <td class="skill-info">簡単なWebページを作成することができます</td>
+        </tr>
+        <tr>
+          <td class="skill-name">photoshop</td>
+          <td class="skill-info">バナー作成や画像編集を行うことができます</td>
+        </tr>
+        <tr>
+          <td class="skill-name">外務員資格　1級</td>
+          <td class="skill-info">証券会社勤務の経験があり、金融取引の専門的な知識があります</td>
+        </tr>
+      </table>
+    </section>
+    <!-- /SKILLセクション -->
+
+    <!-- ABOUTセクション -->
+    <section id="ABOUT">
+      <h2 class="section-title">ABOUT</h2>
+      <div id="about-container">
+        <figure id="hashimoto-figure">
+        <img id="hashimoto" src="img/about.JPG" alt="橋本直の画像" width="800" height="1201">
+        </figure>
+        <div id="about-info">
+          <h3 id="about-name">橋本　直</h3>
+          <p id="about-profile">
+            福岡県北九州市在中。<br>大学卒業後は衣料品メーカーの営業や証券会社の事務として勤務。<br>産休をきっかけにweb制作を学び、webデザイナーを目指し勉強中。<br><br>人の心に届く見やすいデザインを目指しています。
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /ABOUTセクション -->
+  </main>
+
+    <!-- フッター -->
+    <footer>
+      <div id="footer-container">
+        <div id="footer-contact">
+          <h2>CONTACT</h2>
+          <p id="contact-info">お問い合わせはメールまたはSNSにてお願いいたします</p>
+          <p id="e-mail">nao.ishi0227@gmail.com</p>
+          <img id="instalogo" src="img/icons8-インスタグラム.svg" alt="インスタグラムロゴ">
+        </div>
+        <a href="#top"><img src="img/arrow.svg" alt="トップページへ戻る" id="gototop"></a>
+      </div>
+    </footer>
+
+
+
+
+
+
+  </body>
+</html>
