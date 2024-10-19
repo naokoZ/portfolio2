@@ -1,37 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 20px;
 }
 
 body{
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Sawarabi Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin: 0;
-  padding: 0;
   color: #534f4d;
 }
 
 
 /* 共通　セクションタイトル */
 .section-title{
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 550;
+  font-weight: 400;
   font-style: normal;
-  text-align: center;
-  font-size: 40px;
+  font-size: 10.0vw;
   margin: 0;
+  padding-left: 5%;
 }
 
-.section-title::before{
-  content: "−";
-}
-
-.section-title::after{
-  content: "−";
-}
 /* /共通　セクションタイトル */
 
 
@@ -43,10 +39,8 @@ header{
   height: auto;
   display: flex;
   justify-content: space-between;
-  position: sticky;
-    top: 0;
-    z-index: 200;
-  background-color: #F7F5EB;
+  position: fixed;
+  z-index: 200;
 }
 
 #HNlogo{
@@ -63,6 +57,7 @@ header{
 #nav-list{
   display: flex;
   justify-content: space-between;
+  text-shadow: 0 0 2px white, 0 0 2px white;
 }
 
 header > a,.nav-item a{
@@ -82,12 +77,12 @@ header > a,.nav-item a:visited{
 }
 
 .nav-item{
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   list-style: none;
-  font-size: 20px;
+  font-size: 25px;
   padding: 0 10px;
 }
 
@@ -100,6 +95,10 @@ header > a,.nav-item a:visited{
   #sp-nav{
     display: none; 
   }
+
+  #sp-catchcopy{
+    display: none;
+  }
 }
 /* /スマホ用ハンバーガーメニュー設定 */
 
@@ -109,7 +108,7 @@ header > a,.nav-item a:visited{
 /* トップページ */
 /* メインビジュアル */
 #main-visual{
-  aspect-ratio: 5 / 3;
+  aspect-ratio: 7 / 5;
   width: 100%;
   background-color: #F7F5EB;
   position: relative;
@@ -131,8 +130,7 @@ header > a,.nav-item a:visited{
 }
 
 #mv-img{
-  width: 70%;
-  z-index: 10;
+  width: 75%;
   margin: 0;
   position: absolute;
     top: 0%;
@@ -145,23 +143,53 @@ header > a,.nav-item a:visited{
   border-radius: 0 0 0 80px;
 }
 
-#mv-name{
-  width: 80%;
-  z-index: 20;
+#mv-catchcopy{
+  width: 25%;
+  height: auto;
   position: absolute;
-    bottom: 0%;
+    top: 15%;
+    left: 0%;
+  text-align: center;
+}
+
+#mv-catchcopy img{
+  width: 70%;
+  height: auto;
+}
+
+#mv-name{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  position: absolute;
+    bottom: 8%;
     left: 0%;
 }
 
 #mv-name p{
-  font-size: 10.5vw;
+  font-size: 13vw;
   color: #cfc6c1;
-  letter-spacing: -0.7vw;
+  letter-spacing: -0.3vw;
   margin: 0;
 }
 
 .pink{
   color: #EAC7C7;
+}
+
+#mv-flower{
+  width: 12%;
+  height: auto;
+  position: absolute;
+    bottom: -0.5%;
+    right: 0%;
+}
+
+#mv-flower img{
+  width: 100%;
+  height: auto;
 }
 
 /* /メインビジュアル */
@@ -170,9 +198,51 @@ header > a,.nav-item a:visited{
 /* WORKSセクション */
 #WORKS{
   width: 100%;
-  background-color: #F7F5EB;
+  background-color: #cfc6c1;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+#works-div{
+  width: 100%;
+  height: 15.0vw;
+  position: relative;
+}
+
+#works-title{
+  width: 100%;
+  height: 10.0vw;
+  position: relative;
+}
+
+#works-title h2{
+  position: absolute;
+  color: #fbfbf8;
+  z-index: 30;
+}
+
+#works-title div{
+  background-color: #eac7c7;
+  width: 30.0vw;
+  height: 3.5vw;
+  position: absolute;
+    bottom: 0%;
+    left: 0%;
+  z-index: 20;
+}
+
+#works-flower{
+  width: 30%;
+  height: auto;
+  position: absolute;
+    top: -50%;
+    left: 35%;
+}
+
+#works-flower img{
+  width: 100%;
+  height: auto;
+  transform: rotate( 60deg );
 }
 
 #works-list{
@@ -227,9 +297,56 @@ header > a,.nav-item a:visited{
 /* SKILLセクション */
 #SKILL{
   width: 100%;
-  background-color: #F7F5EB;
+  background-color: #f7f5eb;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+#skill-div{
+  width: 100%;
+  height: 15.0vw;
+  position: relative;
+}
+
+#skill-title{
+  width: 100%;
+  height: 10.0vw;
+  position: relative;
+  z-index: 20;
+}
+
+#skill-title h2{
+  position: absolute;
+  color: #cfc6c1;
+  z-index: 30;
+  text-shadow:
+    1px 1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    -1px -1px 0 #FFF,
+    1px -1px 0 #FFF;
+}
+
+#skill-title div{
+  background-color: #eac7c7;
+  width: 7.5vw;
+  height:7.0vw;
+  position: absolute;
+    bottom: -25%;
+    left: 22%;
+  z-index: 20;
+}
+
+#skill-flower{
+  width: 33%;
+  height: auto;
+  position: absolute;
+    top: -35%;
+    right: 2%;
+}
+
+#skill-flower img{
+  width: 100%;
+  height: auto;
 }
 
 #skill-table{
@@ -258,61 +375,141 @@ header > a,.nav-item a:visited{
 /* ABOUTセクション */
 #ABOUT{
   width: 100%;
-  background-color: #F7F5EB;
+  background-color: #cfc6c1;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
+#about-title{
+  width: 100%;
+  height: 10.0vw;
+  position: relative;
+}
+
+#about-title h2{
+  position: absolute;
+  color: #fbfbf8;
+  z-index: 30;
+}
+
+#about-title div{
+  background-color: #eac7c7;
+  width: 25.0vw;
+  height: 3.5vw;
+  position: absolute;
+    bottom: 0%;
+    left: 9%;
+  z-index: 20;
+}
+
 #about-container{
   width: 100%;
+  aspect-ratio: 7 / 4;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px auto;
+  position: relative;
 }
 
-#about-info{
-  padding-left: 50px;
-}
-
-#about-info > h3{
-  font-size: 2vw;
-  font-weight: bold;
-}
-
-#about-info > p{
-  padding-top: 50px;
-  line-height: 3em;
+#about-div{
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  position: relative;
 }
 
 #hashimoto-figure{
-  width: 30%;
+  width: 55%;
   height: auto;
   aspect-ratio: 800 / 1201;
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  margin: auto;
+  z-index: 30;
 }
 
 #hashimoto{
   width: 100%;
   height: auto;
 }
-/* /ABOUTセクション */
 
-
-/* フッター */
-footer h2{
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 550;
-  font-style: normal;
-  font-size: 40px;
-  margin: 0;
+#about-div div{
+  background-color: #eac7c7;
+  width: 10.0vw;
+  height: 10.0vw;
+  position: absolute;
+    bottom: -5%;
+    right: 12%;
+  z-index: 20;
+  border: 1px solid #fbfbf8;
 }
 
+#about-flower{
+  width: 40%;
+  height: auto;
+  position: absolute;
+    bottom: -10%;
+    left: 0%;
+  z-index: 20;
+}
+
+#about-flower img{
+  width: 100%;
+  height: auto;
+}
+
+#about-info{
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+#about-profile > h3{
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+#about-profile > h4{
+  font-size: 2vw;
+  font-family: "Hina Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fbfbf8;
+}
+
+#about-profile > p{
+  font-size: 1.4vw;
+  padding-top: 50px;
+  line-height: 2.2em;
+}
+
+/* /ABOUTセクション */
+
+/* フッター */
 footer{
-  background: linear-gradient(#F7F5EB, #EAC7C7);
+  background-image: url("img/footer_img.jpg") alt="木の根元の写真" width="600" height="300";
+  width: 100%;
+  height: auto;  
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+footer h2{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10.0vw;
+  margin: 0;
+  padding-left: 5%;
+  color: #fbfbf8;
+}
+
 
 #footer-container{
   width: 100%;
@@ -329,6 +526,7 @@ footer{
 }
 
 #footer-contact{
+  color: #fbfbf8;
   padding: 0 50px;
 }
 
@@ -467,7 +665,7 @@ footer{
   /* ハンバーガーメニュー */
 
 #sp-menu{
-  width: 15%;
+  width: 12%;
   height: auto;
 }
 
@@ -483,23 +681,20 @@ footer{
     text-align: center;
   }
 
-  #hasimotologo{
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 8.0vw;
-    margin-top: 80px;
-    text-decoration: none;
-    display: block;
+  #sp_HNlogo img{
+    width: 25%;
+    height: auto;
+    position: absolute;
+      top: 10px;
+      left: 10px;
   }
 
-  #hasimotologo:link{
-    color: black;
-  }
-
-  #hasimotologo:visited{
-    color: black;
+  
+  #sp-nav-close{
+    width: 15%;
+    position: absolute;
+      top: 10px;
+      right: 10px;
   }
 
   #sp-nav-list{
@@ -524,14 +719,6 @@ footer{
     color: black;
   }
 
-  #sp-nav-close{
-    width: 15%;
-    position: absolute;
-      top: 10px;
-      right: 10px;
-  }
-
-
   #nav-figure{
     width: 80%;
     position: absolute;
@@ -549,25 +736,39 @@ footer{
   /* メインビジュアル */
   #main-visual{
     width: 100%;
-        aspect-ratio: 4 / 5;
+    aspect-ratio: 10 / 9;
   }
 
   #mv-img{
     width: 100%;
     aspect-ratio: 4 / 3;
-    z-index: 10;
     position: absolute;
-      top: 10%;
+      top: 0;
       right: 0;
+    z-index: 10;
   }
 
-  #nc-name{
-    font-size: 7vw;
+  #HNlogo{
+    width: 20%;
+    height: auto;
   }
 
-  #nc-catchcopy{
-    font-size: 2.8vw;
+  #sp-catchcopy{
+    width: 25%;
+    height: auto;
+    z-index: 20;
+    position: absolute;
+      top: 17%;
+      right: 7%;
   }
+
+  #sp-catchcopy img{
+    width: 100%;
+    height: auto;
+  }
+
+
+
   /* /メインビジュアル */
 
 
@@ -634,10 +835,16 @@ footer{
     margin: 50px 0;
   }
 
+  #about-div{
+    width: 100%;
+    aspect-ratio: 10 / 9;
+    height: auto;
+    position: relative;
+  }
 
   #hashimoto-figure{
     margin: 0 auto;
-    width: 80%;
+    width: 50%;
     height: auto;
     aspect-ratio: 800 / 1201;
   }
@@ -647,20 +854,50 @@ footer{
     height: auto;
   }
 
+#about-div div{
+  width: 18.0vw;
+  height: 18.0vw;
+  position: absolute;
+    bottom: 5%;
+    right: 12%;
+}
+
+#about-flower{
+  width: 40%;
+  height: auto;
+  position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+  
   #about-info{
-    margin: 0 10px;
-    padding: 20px;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  #about-profile > h3{
+    font-size: max(4.0vw, 20px);
+    font-weight: 500;
   }
   
-  #about-info > h3{
-    font-size: 5vw;
+  #about-profile > h4{
+    font-size: max(3.5vw, 20px);
+    font-family: "Hina Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fbfbf8;
   }
   
-  #about-info > p{
-    padding-top: 0;
-    font-size: 3.5vw;
-    line-height: 1.5em;
+  #about-profile > p{
+    font-size: max(2.5vw, 13px);
+    padding-top: 30px;
+    line-height: 2.2em;
   }
+
  /* /ABOUTセクション */
 
 
