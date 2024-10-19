@@ -689,7 +689,6 @@ footer h2{
       left: 10px;
   }
 
-  
   #sp-nav-close{
     width: 15%;
     position: absolute;
@@ -698,37 +697,38 @@ footer h2{
   }
 
   #sp-nav-list{
-    padding: 30px 0 0 0;
+    margin: 33% auto;
   }
 
   .sp-nav-item{ 
     list-style: none;
-    margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 8.0vw;
+    padding-bottom: 0.5em;
   }
 
   .sp-nav-item a{
     text-decoration: none;
+    color: #534f4d;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
-  .sp-nav-item a{
-    color: black;
-  }
-
-  .sp-nav-item a{
-    color: black;
-  }
 
   #nav-figure{
-    width: 80%;
+    width: 90%;
     position: absolute;
+      right: 0;
+      left: 0;
       bottom: 5%;
+    margin: 0 auto;
   }
 
   #nav-img{
     display: block;
-    margin: 0 auto;
     width: 100%;
+    height: auto;
   }
   /* /ハンバーガーメニュー */
 
