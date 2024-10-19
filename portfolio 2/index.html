@@ -7,18 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
     <!-- ↓Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <!-- ↓Abobe font -->
-    <link rel="stylesheet" href="https://use.typekit.net/kvb4lrd.css">
+      <!-- HASHIMOTO NAOロゴ・セクションタイトル・ヘッダーナビ -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto+Condensed&display=swap" rel="stylesheet">
+      <!-- ABOUTセクション　名前ローマ字表記 -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+      <!-- その他本文 -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
   </head>
 
   <body id="top">
     
     <!-- ヘッダー -->
     <header>
-      <a href="#top" id="HNlogo"><img src="img/HNアイコン２.png" alt="HNロゴ" width="400" height="300"></a>
+      <a href="#top" id="HNlogo"><img src="img/HNicon.png" alt="HNロゴ" width="400" height="300"></a>
       <!-- PC用メニュー -->
       <nav id="header-nav">
         <ul id="nav-list">
@@ -31,7 +38,7 @@
       <!-- スマホ用メニュー -->
       <img id="sp-menu" src="img/menu.svg" alt="スマホ用メニューボタン" onclick="document.getElementById('sp-nav').style.display = 'block';">
       <nav id="sp-nav">
-        <a id="hasimotologo" href="#top">HASHIMOTO<br>NAO</a>
+        <a href="#top" id="sp_HNlogo"><img src="img/HNicon.png" alt="HNロゴ" width="400" height="300"></a>
         <ul id="sp-nav-list">
           <li class="sp-nav-item"><a href="#WORKS" onclick="document.getElementById('sp-nav').style.display = 'none'">WORKS</a></li>
           <li class="sp-nav-item"><a href="#SKILL" onclick="document.getElementById('sp-nav').style.display = 'none'">SKILL</a></li>
@@ -50,20 +57,38 @@
     <!-- メインビジュアル -->
     <section id="main-visual">
       <div id="mv-container">
-        <p>心に届くデザインを<br>作っていきたいです。</p>
+        <figure id="mv-catchcopy">
+          <img src="img/catchcopy.png" alt="心に届くデザインを作っていきたいです。" width="600" height="800">
+        </figure>
+          <!-- スマホ用キャッチコピー -->
+            <figure id="sp-catchcopy">
+            <img src="img/sp_catchcopy.png" alt="心に届くデザインを作っていきたいです。" width="600" height="800">
+            </figure>
+          <!-- /スマホ用キャッチコピー -->
         <figure id="mv-img">
-        <img src="img/main.jpg" alt="大きな木と自分の写真" width="900" height="600">
+          <img src="img/main.jpg" alt="大きな木と自分の写真" width="900" height="600">
         </figure>
       </div>
       <div id="mv-name">
         <p>H<span class="pink">A</span>SHIMOTO N<span class="pink">A</span>O</p>
       </div>
+      <figure id="mv-flower">
+        <img src="img/flower4.png" alt="お花のイラスト４" width="500" height="500">
+      </figure>
     </section>
     <!-- /メインビジュアル -->
 
     <!-- WORKSセクション -->
     <section id="WORKS">
-      <h2 class="section-title">WORKS</h2>
+      <div id="works-div">
+        <div id="works-title">
+          <h2 class="section-title">WORKS</h2>
+          <div></div>
+        </div>
+        <figure id="works-flower">
+          <img src="img/flower.png" alt="お花のイラスト" width="500" height="500">
+        </figure>
+      </div>
       <div id="works-list">
         <div class="works-item">
           <a class="works-link" href="works-1.html">
@@ -115,7 +140,16 @@
 
     <!-- SKILLセクション -->
     <section id="SKILL">
-      <h2 class="section-title">SKILL</h2>
+      <div id="skill-div">
+        <div id="skill-title">
+          <h2 class="section-title">SKILL</h2>
+          <div>
+          </div>
+        </div>
+        <figure id="skill-flower">
+          <img src="img/flower6.png" alt="お花のイラスト2" width="500" height="500">
+        </figure>
+      </div>
       <table id="skill-table">
         <tr>
           <td class="skill-name">HTML/CSS</td>
@@ -135,16 +169,28 @@
 
     <!-- ABOUTセクション -->
     <section id="ABOUT">
-      <h2 class="section-title">ABOUT</h2>
-      <div id="about-container">
-        <figure id="hashimoto-figure">
-        <img id="hashimoto" src="img/about.JPG" alt="橋本直の画像" width="800" height="1201">
-        </figure>
+      <div id="about-title">
+        <h2 class="section-title">ABOUT</h2>
+        <div id="about-box1"></div>
+      </div>
+      <div id="about-container"> 
+        <div id="about-div">
+          <figure id="hashimoto-figure">
+            <img id="hashimoto" src="img/about.JPG" alt="橋本直の画像" width="800" height="1201">
+          </figure>
+          <figure id="about-flower">
+            <img src="img/flower3.png" alt="お花のイラスト３" width="500" height="500">
+          </figure>
+          <div></div>
+        </div>
         <div id="about-info">
-          <h3 id="about-name">橋本　直</h3>
-          <p id="about-profile">
-            福岡県北九州市在中。<br>大学卒業後は衣料品メーカーの営業や証券会社の事務として勤務。<br>産休をきっかけにweb制作を学び、webデザイナーを目指し勉強中。<br><br>人の心に届く見やすいデザインを目指しています。
-          </p>
+          <div id="about-profile">
+            <h3>橋本　直</h3>
+            <h4>Hashimoto Nao</h4>
+            <p>
+              1996年生まれ<br>福岡県北九州市在中<br><br>大学卒業後は衣料品メーカーの営業や証券会社の事務として勤務。<br>産休をきっかけにweb制作を学び、webデザイナーを目指し勉強中。<br><br>人の心に届く見やすいデザインを目指しています。
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -158,13 +204,11 @@
           <h2>CONTACT</h2>
           <p id="contact-info">お問い合わせはメールまたはSNSにてお願いいたします</p>
           <p id="e-mail">nao.ishi0227@gmail.com</p>
-          <img id="instalogo" src="img/icons8-インスタグラム.svg" alt="インスタグラムロゴ">
+          <img id="instalogo" src="img/instagram_icon_white.svg" alt="インスタグラムロゴ">
         </div>
         <a href="#top"><img src="img/arrow.svg" alt="トップページへ戻る" id="gototop"></a>
       </div>
     </footer>
-
-
 
 
 
