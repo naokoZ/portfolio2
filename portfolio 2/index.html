@@ -18,7 +18,7 @@
       <!-- その他本文 -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   </head>
 
   <body id="top">
@@ -38,7 +38,7 @@
       <!-- スマホ用メニュー -->
       <img id="sp-menu" src="img/menu.svg" alt="スマホ用メニューボタン" onclick="document.getElementById('sp-nav').style.display = 'block';">
       <nav id="sp-nav">
-        <a href="#top" id="sp_HNlogo"><img src="img/HNicon.png" alt="HNロゴ" width="400" height="300"></a>
+        <a href="#top" id="sp_HNlogo" onclick="document.getElementById('sp-nav').style.display = 'none'"><img src="img/HNicon.png" alt="HNロゴ" width="400" height="300"></a>
         <ul id="sp-nav-list">
           <li class="sp-nav-item"><a href="#WORKS" onclick="document.getElementById('sp-nav').style.display = 'none'">WORKS</a></li>
           <li class="sp-nav-item"><a href="#SKILL" onclick="document.getElementById('sp-nav').style.display = 'none'">SKILL</a></li>
@@ -58,13 +58,12 @@
     <section id="main-visual">
       <div id="mv-container">
         <figure id="mv-catchcopy">
-          <img src="img/catchcopy.png" alt="心に届くデザインを作っていきたいです。" width="600" height="800">
+          <img src="img/catchcopy.png" alt="PC用キャッチコピー" width="600" height="800">
         </figure>
           <!-- スマホ用キャッチコピー -->
             <figure id="sp-catchcopy">
-            <img src="img/sp_catchcopy.png" alt="心に届くデザインを作っていきたいです。" width="600" height="800">
+              <img src="img/sp_catchcopy.png" alt="スマホ用キャッチコピー" width="600" height="800">
             </figure>
-          <!-- /スマホ用キャッチコピー -->
         <figure id="mv-img">
           <img src="img/main.jpg" alt="大きな木と自分の写真" width="900" height="600">
         </figure>
@@ -81,10 +80,8 @@
     <!-- WORKSセクション -->
     <section id="WORKS">
       <div id="works-div">
-        <div id="works-title">
-          <h2 class="section-title">WORKS</h2>
-          <div></div>
-        </div>
+        <h2 class="section-title">WORKS</h2>
+        <div></div>
         <figure id="works-flower">
           <img src="img/flower.png" alt="お花のイラスト" width="500" height="500">
         </figure>
@@ -141,11 +138,8 @@
     <!-- SKILLセクション -->
     <section id="SKILL">
       <div id="skill-div">
-        <div id="skill-title">
-          <h2 class="section-title">SKILL</h2>
-          <div>
-          </div>
-        </div>
+        <h2 class="section-title">SKILL</h2>
+        <div></div>
         <figure id="skill-flower">
           <img src="img/flower6.png" alt="お花のイラスト2" width="500" height="500">
         </figure>
@@ -171,7 +165,7 @@
     <section id="ABOUT">
       <div id="about-title">
         <h2 class="section-title">ABOUT</h2>
-        <div id="about-box1"></div>
+        <div></div>
       </div>
       <div id="about-container"> 
         <div id="about-div">
@@ -204,7 +198,9 @@
           <h2>CONTACT</h2>
           <p id="contact-info">お問い合わせはメールまたはSNSにてお願いいたします</p>
           <p id="e-mail">nao.ishi0227@gmail.com</p>
-          <img id="instalogo" src="img/instagram_icon_white.svg" alt="インスタグラムロゴ">
+          <a href="https://www.instagram.com/nao_hsm27?igsh=NGVkdDhtYzlnZWdn&utm_source=qr" target="_blank">
+            <img id="instalogo" src="img/instagram_icon_white.svg" alt="インスタグラムロゴ">
+          </a>
         </div>
         <a href="#top"><img src="img/arrow.svg" alt="トップページへ戻る" id="gototop"></a>
       </div>
