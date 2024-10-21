@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
     <!-- ↓Google font -->
+    <!-- HASHIMOTO NAOロゴ・セクションタイトル・ヘッダーナビ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <!-- ↓Abobe font -->
-    <link rel="stylesheet" href="https://use.typekit.net/kvb4lrd.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- その他本文 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   </head>
 
   <body id="socialtech-top">
     
     <!-- ヘッダー -->
     <header id="header-h1">
-      <h1><a href="index.html#top">HASHIMOTO NAO</a></h1>
+      <a href="index.html#top" id="HNlogo"><img src="img/HNicon.png" alt="HNロゴ" width="400" height="300"></a>
       <!-- PC用メニュー -->
       <nav id="header-nav">
         <ul id="nav-list">
@@ -31,11 +34,11 @@
       <!-- スマホ用メニュー -->
       <img id="sp-menu" src="img/menu.svg" alt="スマホ用メニューボタン" onclick="document.getElementById('sp-nav').style.display = 'block';">
       <nav id="sp-nav">
-        <a id="hasimotologo" href="#top">HASHIMOTO<br>NAO</a>
+        <a href="index.html#top" id="sp_HNlogo" onclick="document.getElementById('sp-nav').style.display = 'none'"><img src="img/HNicon.png" alt="HNロゴ" width="400" height="300"></a>
         <ul id="sp-nav-list">
-          <li class="sp-nav-item"><a href="#WORKS" onclick="document.getElementById('sp-nav').style.display = 'none'">WORKS</a></li>
-          <li class="sp-nav-item"><a href="#SKILL" onclick="document.getElementById('sp-nav').style.display = 'none'">SKILL</a></li>
-          <li class="sp-nav-item"><a href="#ABOUT" onclick="document.getElementById('sp-nav').style.display = 'none'">ABOUT</a></li>
+          <li class="sp-nav-item"><a href="index.html#WORKS" onclick="document.getElementById('sp-nav').style.display = 'none'">WORKS</a></li>
+          <li class="sp-nav-item"><a href="index.html#SKILL" onclick="document.getElementById('sp-nav').style.display = 'none'">SKILL</a></li>
+          <li class="sp-nav-item"><a href="index.html#ABOUT" onclick="document.getElementById('sp-nav').style.display = 'none'">ABOUT</a></li>
         </ul>
         <img id="sp-nav-close" src="img/close.svg" alt="メニューを閉じる" onclick="document.getElementById('sp-nav').style.display = 'none'">
         <figure id="nav-figure">
@@ -69,6 +72,6 @@
           </div>
           <a href="index.html#WORKS" class="home-link">WORKS一覧へ</a>
         </div>
-        <a href="#socialtech-top"><img src="img/arrow.svg" alt="ページ上部へ戻る" class="gotoworkstop"></a>
+        <a href="#socialtech-top"><img src="img/arrow_brown.svg" alt="ページ上部へ戻る" class="gotoworkstop"></a>
       </article>
     </main>
