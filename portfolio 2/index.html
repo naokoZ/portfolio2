@@ -58,12 +58,12 @@
     <section id="main-visual">
       <div id="mv-container">
         <figure id="mv-catchcopy">
-          <img src="img/catchcopy.png" alt="PC用キャッチコピー" width="600" height="800">
+          <picture>
+            <source srcset="img/catchcopy.png" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+            <source srcset="img/sp_catchcopy.png" media="(max-width: 767px)"/><!-- 幅767px以下なら表示 -->
+            <img src="img/catchcopy.png" alt="キャッチコピー" /><!-- それ以外で表示 -->
+          </picture>
         </figure>
-          <!-- スマホ用キャッチコピー -->
-            <figure id="sp-catchcopy">
-              <img src="img/sp_catchcopy.png" alt="スマホ用キャッチコピー" width="600" height="800">
-            </figure>
         <figure id="mv-img">
           <img src="img/main.jpg" alt="大きな木と自分の写真" width="900" height="600">
         </figure>
