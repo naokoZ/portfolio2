@@ -96,10 +96,6 @@ header > a,.nav-item a:visited{
     display: none; 
   }
 
-  #sp-catchcopy{
-    display: none;
-  }
-
 }
 /* /スマホ用ハンバーガーメニュー設定 */
 
@@ -149,6 +145,8 @@ header > a,.nav-item a:visited{
   height: auto;
   position: absolute;
     top: 18%;
+    right: auto;
+    bottom: auto;
     left: 0%;
   text-align: center;
 }
@@ -753,16 +751,19 @@ footer h2{
     height: auto;
   }
 
-  #sp-catchcopy{
+  
+  #mv-catchcopy{
     width: 25%;
     height: auto;
     z-index: 20;
     position: absolute;
       top: 17%;
       right: 7%;
+      bottom: auto;
+      left: auto;
   }
 
-  #sp-catchcopy img{
+  #mv-catchcopy img{
     width: 100%;
     height: auto;
   }
@@ -951,7 +952,7 @@ footer h2{
 
   /* フッター */
   footer h2{
-    font-size: 15.0vw;
+    font-size: 12.0vw;
     margin: 0;
   }
   
